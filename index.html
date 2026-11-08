@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Kuwahara Junior - Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <a class="nav-title" href="#home">EKJ<span>.</span></a>
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#experiencia">Experiência</a>
+                    <a href="#curriculo">Currículo</a>
+                    <a href="#contato">Contato</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="eyebrow">PORTFÓLIO ACADÊMICO · FATEC SJC</p>
+                    <h1>Eduardo<br><span>Kuwahara Junior</span></h1>
+                    <p class="subtitle">Desenvolvimento de Software Multiplataforma</p>
+                    <p class="description">
+                        Meu objetivo é atuar como desenvolvedor Full Stack, com foco em aplicações web,
+                        APIs e soluções baseadas em Inteligência Artificial. Busco evoluir continuamente
+                        por meio de projetos acadêmicos e experiências práticas.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projetos">Conheça meus projetos <span>↗</span></a>
+                        <a class="button button-secondary" href="#contato">Entrar em contato</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-frame">
+                        <img src="images/profile.jpg" alt="Foto profissional de Eduardo Kuwahara Junior" class="profile-img">
+                    </div>
+                    <div class="hero-caption"><strong>Eduardo Kuwahara Junior</strong><span>Desenvolvedor em formação</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dados" class="section section-light">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">01 · PERFIL</p>
+                    <h2>Sobre mim</h2>
+                    <p>Uma visão objetiva da minha formação, interesses e canais profissionais.</p>
+                </div>
+                <div class="profile-grid">
+                    <div class="dados-content">
+                    <div class="dado-item">
+                        <strong>Nome:</strong> Eduardo Kuwahara Junior
+                    </div>
+                    <div class="dado-item">
+                        <strong>Email:</strong> 
+                        <a href="mailto:eduardokuwaharajr57@gmail.com" onclick="copyEmail(event)">eduardokuwaharajr57@gmail.com</a>
+                    </div>
+                    <div class="dado-item">
+                        <strong>Telefone:</strong> (12) 98148-1559
+                    </div>
+                    <div class="dado-item">
+                        <strong>LinkedIn:</strong> 
+                        <a href="https://www.linkedin.com/in/eduardo-kuwahara-junior-3b2267303" target="_blank">Perfil LinkedIn</a>
+                    </div>
+                    <div class="dado-item">
+                        <strong>GitHub:</strong> 
+                        <a href="https://github.com/EduardoKuwahara" target="_blank">@EduardoKuwahara</a>
+                    </div>
+                </div>
+                    <div class="about-panel">
+                        <span class="panel-label">FORMAÇÃO ATUAL</span>
+                        <h3>Construindo soluções digitais com propósito.</h3>
+                        <p>Estudante de Desenvolvimento de Software Multiplataforma na FATEC São José dos Campos — Prof. Jessen Vidal.</p>
+                        <div class="interest-list">
+                            <span>Desenvolvimento web</span>
+                            <span>APIs e back-end</span>
+                            <span>Inteligência Artificial</span>
+                            <span>Banco de dados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="interesses" class="section section-muted">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">02 · INTERESSES</p>
+                    <h2>Além do código</h2>
+                    <p>Curiosidades que ampliam minha forma de pensar e criar.</p>
+                </div>
+                <div class="interesses-grid">
+                    <div class="interesse-item">
+                        <span class="icon">💻</span>
+                        <span>Desenvolvimento Web</span>
+                    </div>
+                    <div class="interesse-item">
+                        <span class="icon">🗄️</span>
+                        <span>Banco de Dados</span>
+                    </div>
+                    <div class="interesse-item">
+                        <span class="icon">⚽</span>
+                        <span>Esportes</span>
+                    </div>
+                    <div class="interesse-item">
+                        <span class="icon">🔬</span>
+                        <span>Biologia e Astronomia</span>
+                    </div>
+                    <div class="interesse-item">
+                        <span class="icon">🎭</span>
+                        <span>Artes Cênicas</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="section section-light">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">03 · PROJETOS</p>
+                    <h2>Projetos acadêmicos</h2>
+                    <p>Experiências práticas desenvolvidas ao longo da formação na FATEC.</p>
+                </div>
+                
+                <div class="projetos-container">
+                    <div class="project-group-intro"><span class="status-dot"></span> API · PROJETO ACADÊMICO</div>
+                    <div class="projeto-hero">
+                        <div class="projeto-hero-content">
+                            <div class="projeto-hero-header">
+                                <div class="projeto-hero-badge">5º semestre · 2026 · Xertica</div>
+                                <h3 class="projeto-hero-title">⚖️ Themis</h3>
+                                <p class="projeto-hero-subtitle">Plataforma inteligente de análise jurídica em nuvem</p>
+                            </div>
+                            
+                            <div class="projeto-hero-info">
+                                <div class="info-card">
+                                    <span class="info-icon">🏢</span>
+                                    <div>
+                                        <strong>Parceria</strong>
+                                        <p>Xertica - FATEC Profº Jessen Vidal</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="info-card">
+                                    <span class="info-icon">🎯</span>
+                                    <div>
+                                        <strong>Objetivo</strong>
+                                        <p>Analisar petições iniciais, identificar precedentes relevantes e gerar resumos e minutas para apoio à decisão jurídica</p>
+                                    </div>
+                                </div>
+                                <div class="info-card">
+                                    <span class="info-icon">⚠️</span>
+                                    <div>
+                                        <strong>Problema</strong>
+                                        <p>Profissionais do Direito precisam analisar grandes volumes de petições e precedentes, localizar informações relevantes e preparar documentos de apoio em pouco tempo, tornando a pesquisa manual demorada e sujeita a inconsistências.</p>
+                                    </div>
+                                </div>
+                                <div class="info-card">
+                                    <span class="info-icon">✅</span>
+                                    <div>
+                                        <strong>Solução</strong>
+                                        <p>Uma plataforma em nuvem que combina aplicativo mobile, API e base de precedentes para organizar a análise jurídica, apresentar resultados relevantes e apoiar a elaboração de resumos e minutas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tech-stack">
+                                <h4>🛠 Stack Tecnológica</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag frontend">Flutter</span>
+                                    <span class="tech-tag backend">Python</span>
+                                    <span class="tech-tag backend">FastAPI</span>
+                                    <span class="tech-tag database">MongoDB</span>
+                                    <span class="tech-tag tools">Docker</span>
+                                    <span class="tech-tag tools">Docker Swarm</span>
+                                    <span class="tech-tag design">Figma</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contribuicoes">
+                                <h4>💡 Principais Contribuições</h4>
+                                <div class="contribuicoes-grid">
+                                    <div class="contrib-item">
+                                        <span class="contrib-icon">🔧</span>
+                                        <span>Desenvolvimento do aplicativo mobile e da experiência do usuário</span>
+                                    </div>
+                                    <div class="contrib-item">
+                                        <span class="contrib-icon">🌐</span>
+                                        <span>Estruturação do fluxo de análise jurídica com IA e NLP</span>
+                                    </div>
+                                    <div class="contrib-item">
+                                        <span class="contrib-icon">📊</span>
+                                        <span>Organização dos resultados com precedentes, resumo e aplicabilidade</span>
+                                    </div>
+                                    <div class="contrib-item">
+                                        <span class="contrib-icon">🚨</span>
+                                        <span>Modelagem dos fluxos para advogado, juiz e julgador</span>
+                                    </div>
+                                    <div class="contrib-item">
+                                        <span class="contrib-icon">🔗</span>
+                                        <span>Integração entre app, API e base de precedentes</span>
+                                    </div>
+                                    <div class="contrib-item">
+                                        <span class="contrib-icon">📱</span>
+                                        <span>Prototipação de interfaces e documentação do projeto</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-skills">
+                                <div>
+                                    <h4>Hard skills adquiridas</h4>
+                                    <p>Desenvolvimento de aplicativo mobile com Flutter, integração entre cliente e API, modelagem de fluxos de uso, prototipação no Figma, organização de dados e compreensão de soluções com IA e NLP.</p>
+                                </div>
+                                <div>
+                                    <h4>Soft skills exercitadas</h4>
+                                    <p>Trabalho em equipe, comunicação com diferentes perfis de usuário, organização de tarefas, colaboração na tomada de decisões e apresentação de soluções.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="projeto-actions">
+                                <a href="https://github.com/Equipe-Skyfall/themis.git" target="_blank" class="btn-projeto-hero">
+                                    <span>Ver repositório da equipe</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="outros-projetos">
+                        <div class="subsection-heading">
+                            <h3 class="outros-projetos-title">Outros projetos acadêmicos</h3>
+                            <p>Repositórios das equipes. As cópias pessoais ainda precisam ser criadas.</p>
+                        </div>
+                        
+                        <div class="projetos-grid">
+                            <article class="projeto-card-modern">
+                                <div class="projeto-card-header">
+                                    <div class="projeto-icon">⏳</div>
+                                    <div>
+                                        <h4>Chronos</h4>
+                                        <span class="projeto-type">Sistema Corporativo</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="project-card-details">
+                                    <div><strong>Problema</strong><p>Equipes precisam registrar a jornada de trabalho e acompanhar sua organização de forma centralizada, com menos retrabalho e inconsistências.</p></div>
+                                    <div><strong>Solução</strong><p>Sistema corporativo para controle de ponto e gestão de equipes, com melhorias, otimizações e novos recursos.</p></div>
+                                </div>
+                                
+                                <div class="projeto-tech-simple">
+                                    <span class="tech-simple">Java</span>
+                                    <span class="tech-simple">Spring</span>
+                                    <span class="tech-simple">MongoDB</span>
+                                    <span class="tech-simple">Next.js</span>
+                                    <span class="tech-simple">TypeScript</span>
+                                </div>
+                                
+                                <div class="projeto-role">
+                                    <strong>Contribuição pessoal:</strong> Desenvolvedor Full-Stack, Modelagem de Dados
+                                </div>
+                                <div class="project-card-details">
+                                    <div><strong>Hard skills</strong><p>Desenvolvimento full-stack com Java, Spring, Next.js e TypeScript; modelagem e persistência de dados com MongoDB.</p></div>
+                                    <div><strong>Soft skills</strong><p>Colaboração em equipe, análise de requisitos, organização do trabalho e comunicação técnica.</p></div>
+                                </div>
+                                
+                                <a href="https://github.com/CtrI-Alt-Del/chronos.git" target="_blank" class="btn-projeto-simple">
+                                    Ver repositório da equipe
+                                </a>
+                            </article>
+                        
+                            <article class="projeto-card-modern">
+                                <div class="projeto-card-header">
+                                    <div class="projeto-icon">🌱</div>
+                                    <div>
+                                        <h4>Smart-Farming</h4>
+                                        <span class="projeto-type">Sistema IoT</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="project-card-details">
+                                    <div><strong>Problema</strong><p>O acompanhamento das condições de uma estufa exige observar dados de sensores e identificar mudanças que possam afetar o cultivo.</p></div>
+                                    <div><strong>Solução</strong><p>Sistema IoT para monitorar e analisar dados da estufa, disponibilizando informações em dashboards em tempo real.</p></div>
+                                </div>
+                                
+                                <div class="projeto-tech-simple">
+                                    <span class="tech-simple">Python</span>
+                                    <span class="tech-simple">Flask</span>
+                                    <span class="tech-simple">AWS</span>
+                                    <span class="tech-simple">MySQL</span>
+                                </div>
+                                
+                                <div class="projeto-role">
+                                    <strong>Contribuição pessoal:</strong> Product Owner, Desenvolvimento da API
+                                </div>
+                                <div class="project-card-details">
+                                    <div><strong>Hard skills</strong><p>Desenvolvimento de API com Python e Flask, integração com MySQL e uso de serviços da AWS.</p></div>
+                                    <div><strong>Soft skills</strong><p>Priorização de demandas, visão de produto, comunicação com a equipe e tomada de decisões.</p></div>
+                                </div>
+                                
+                                <a href="https://github.com/CyberScrums/Projeto-Smart-Farming" target="_blank" class="btn-projeto-simple">
+                                    Ver repositório da equipe
+                                </a>
+                            </article>
+                            
+                            <article class="projeto-card-modern">
+                                <div class="projeto-card-header">
+                                    <div class="projeto-icon">📦</div>
+                                    <div>
+                                        <h4>ProStock</h4>
+                                        <span class="projeto-type">Sistema de Gestão</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="project-card-details">
+                                    <div><strong>Problema</strong><p>O controle de estoque precisa oferecer uma visão organizada dos produtos e movimentações para apoiar decisões e reduzir falhas operacionais.</p></div>
+                                    <div><strong>Solução</strong><p>Sistema de gestão de estoque com interface web moderna e funcionalidades de controle organizadas em uma aplicação responsiva.</p></div>
+                                </div>
+                                
+                                <div class="projeto-tech-simple">
+                                    <span class="tech-simple">Node.js</span>
+                                    <span class="tech-simple">React</span>
+                                    <span class="tech-simple">TailwindCSS</span>
+                                    <span class="tech-simple">TypeScript</span>
+                                </div>
+                                
+                                <div class="projeto-role">
+                                    <strong>Contribuição pessoal:</strong> UI/UX Design, Frontend Developer
+                                </div>
+                                <div class="project-card-details">
+                                    <div><strong>Hard skills</strong><p>Construção de interfaces com React, TypeScript e TailwindCSS, além de práticas de UI/UX Design.</p></div>
+                                    <div><strong>Soft skills</strong><p>Empatia com o usuário, trabalho colaborativo, atenção aos detalhes e apresentação de decisões de interface.</p></div>
+                                </div>
+                                
+                                <a href="https://github.com/EquipeSkyfall/API_2Semestre" target="_blank" class="btn-projeto-simple">
+                                    Ver repositório da equipe
+                                </a>
+                            </article>
+
+                            <article class="projeto-card-modern">
+                                <div class="projeto-card-header">
+                                    <div class="projeto-icon">🌦️</div>
+                                    <div>
+                                        <h4>SkyTrack</h4>
+                                        <span class="projeto-type">Sistema de Monitoramento</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-card-details">
+                                    <div><strong>Problema</strong><p>O monitoramento de condições meteorológicas exige reunir dados, acompanhar alterações e comunicar situações relevantes para apoiar a prevenção de riscos.</p></div>
+                                    <div><strong>Solução</strong><p>Sistema de monitoramento em tempo real com coleta de dados, dashboards interativos e alertas para apoiar o acompanhamento meteorológico.</p></div>
+                                </div>
+
+                                <div class="projeto-tech-simple">
+                                    <span class="tech-simple">TypeScript</span>
+                                    <span class="tech-simple">React</span>
+                                    <span class="tech-simple">Node.js</span>
+                                    <span class="tech-simple">MongoDB</span>
+                                </div>
+
+                                <div class="projeto-role">
+                                    <strong>Contribuição pessoal:</strong> Desenvolvimento full-stack e interface responsiva
+                                </div>
+                                <div class="project-card-details">
+                                    <div><strong>Hard skills</strong><p>Desenvolvimento full-stack com TypeScript, React e Node.js, integração com MongoDB e criação de interfaces responsivas.</p></div>
+                                    <div><strong>Soft skills</strong><p>Integração entre front-end e back-end, organização de tarefas, comunicação e resolução colaborativa de problemas.</p></div>
+                                </div>
+
+                                <a href="https://github.com/Equipe-Skyfall/skytrack" target="_blank" class="btn-projeto-simple">
+                                    Ver repositório da equipe
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="section section-muted">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">04 · EXPERIÊNCIA</p>
+                    <h2>Experiência profissional</h2>
+                    <p>Competências desenvolvidas no ambiente de trabalho.</p>
+                </div>
+                <div class="curriculum-card">
+                    <h3>Assistente de Loja — Grupo Ri Happy</h3>
+                    <p>Atuação atual no varejo, desenvolvendo responsabilidade, atendimento ao público, comunicação, organização e trabalho em equipe. Embora ainda não seja uma experiência na área de tecnologia, faz parte da minha trajetória profissional e contribui para o desenvolvimento de habilidades sociais importantes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pessoais" class="section section-light">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">05 · PROJETOS PESSOAIS</p>
+                    <h2>Em construção</h2>
+                    <p>Um espaço reservado para projetos desenvolvidos fora das atividades acadêmicas.</p>
+                </div>
+                <div class="curriculum-card">
+                    <p>No momento, ainda não possuo projetos pessoais publicados. Esta seção será atualizada conforme novos projetos forem desenvolvidos fora das atividades acadêmicas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="curriculo" class="section section-muted">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">06 · FORMAÇÃO COMPLEMENTAR</p>
+                    <h2>Currículo</h2>
+                    <p>Cursos, pesquisa e experiências que complementam minha formação.</p>
+                </div>
+                <div class="curriculum-grid">
+                    <div class="curriculum-card">
+                        <h3>Cursos e formação complementar</h3>
+                        <ul>
+                            <li>Curso básico de Lógica de Programação em Python</li>
+                            <li>Master Class Hands on the Particles</li>
+                        </ul>
+                    </div>
+                    <div class="curriculum-card">
+                        <h3>Pesquisa e eventos</h3>
+                        <ul>
+                            <li>PIBIC-JR com a UNESP — pesquisa em Energia Eólica</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section section-light">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">07 · COMPETÊNCIAS</p>
+                    <h2>Habilidades técnicas</h2>
+                    <p>Tecnologias exploradas em projetos acadêmicos e estudos.</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">TailwindCSS</span>
+                            <span class="skill-tag">Bootstrap</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Flutter</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">TypeScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Banco de Dados</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>DevOps & Outros</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">RabbitMQ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="section contact-section">
+            <div class="container contact-content">
+                <div>
+                    <p class="eyebrow">08 · CONTATO</p>
+                    <h2>Vamos conversar?</h2>
+                    <p>Estou aberto a oportunidades, colaborações e conversas sobre tecnologia.</p>
+                </div>
+                <a class="button button-light" href="mailto:eduardokuwaharajr57@gmail.com">Enviar um e-mail <span>↗</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Eduardo Kuwahara Junior · Portfólio acadêmico</p>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
