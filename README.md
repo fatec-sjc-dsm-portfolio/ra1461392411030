@@ -1,150 +1,59 @@
 # Portfólio Acadêmico — Eduardo Kuwahara Junior
 
-Portfólio acadêmico de Eduardo Kuwahara Junior, estudante de Desenvolvimento de Software Multiplataforma na FATEC São José dos Campos. O site é construído com HTML, CSS e JavaScript puros e deve ser publicado pelo GitHub Pages.
+Portfólio acadêmico desenvolvido com HTML e CSS, organizado no formato de páginas estáticas em `docs/` para publicação no GitHub Pages.
 
-## 🚀 Funcionalidades
+## Estrutura do projeto
 
-- **Design Responsivo**: Adaptável para desktop, tablet e mobile
-- **Animações Suaves**: Efeitos de transição e scroll suave
-- **Interface Moderna**: Design clean e profissional
-- **Navegação Intuitiva**: Menu fixo com links para seções
-- **Efeitos Interativos**: Hover effects e animações de entrada
-
-## 📁 Estrutura do Projeto
-
-```
-Portifolio/
-├── index.html          # Página principal
-├── styles/
-│   └── style.css       # Estilos CSS
-├── scripts/
-│   └── script.js       # JavaScript para interações
-├── images/
-│   └── profile.jpg     # Foto de perfil
-└── README.md          # Este arquivo
+```text
+Portifólio 6/
+├── docs/
+│   ├── index.html
+│   ├── informacoes.html
+│   ├── projetos.html
+│   ├── asset/
+│   │   └── profile.jpg
+│   └── css/
+│       ├── style-home.css
+│       ├── style-informacoes.css
+│       └── style-projetos.css
+├── index.html           # redireciona para docs/index.html
+├── package.json
+├── .nojekyll
+└── README.md
 ```
 
-## 🎨 Seções
+## Páginas
 
-### 1. Header/Navegação
-- Menu fixo no topo
-- Links de navegação suave para seções
-- Design responsivo com backdrop blur
+- `docs/index.html` — apresentação inicial.
+- `docs/projetos.html` — projetos acadêmicos com detalhamento completo.
+- `docs/informacoes.html` — dados pessoais, formação, experiência, currículo, skills e contato.
 
-### 2. Hero Section
-- Apresentação principal
-- Foto de perfil circular
-- Título com efeito typing
-- Layout em grid responsivo
+## Execução local
 
-### 3. Dados Pessoais
-- Informações de contato
-- Links para email e LinkedIn
-- Card design com sombras
+Na raiz do projeto:
 
-### 4. Interesses e Hobbies
-- Grid de interesses com ícones
-- Efeitos hover interativos
-- Layout responsivo
+```bash
+python -m http.server 8000
+```
 
-### 5. Projetos
-- Cards de projetos com informações detalhadas
-- Links para repositórios GitHub
-- Animações de entrada
+Abra:
 
-### 6. Experiência profissional
-- Experiência atual como Assistente de Loja no Grupo Ri Happy
-
-### 7. Informações curriculares
-- Curso básico de Lógica de Programação em Python
-- PIBIC-JR com a UNESP em Energia Eólica
-- Master Class Hands on the Particles
-
-### 8. Footer
-- Informações de copyright
-- Design minimalista
-
-## 🛠️ Tecnologias Utilizadas
-
-- **HTML5**: Estrutura semântica
-- **CSS3**:
-  - Flexbox e CSS Grid
-  - Gradientes e sombras
-  - Animações e transições
-  - Media queries para responsividade
-- **JavaScript**:
-  - Scroll suave
-  - Animações de entrada
-  - Efeitos interativos
-  - Intersection Observer API
-
-## 📱 Responsividade
-
-O portfolio foi desenvolvido com mobile-first design e inclui:
-
-- **Desktop**: Layout em duas colunas na hero section
-- **Tablet**: Adaptações de grid e espaçamentos
-- **Mobile**: Layout em coluna única, menu adaptativo
-
-### Breakpoints:
-- Mobile: até 480px
-- Tablet: 481px - 768px
-- Desktop: 769px
-
-## 🎯 Como Executar
-
-1. **Clone ou baixe os arquivos**
-2. **Abra o terminal na pasta do projeto**
-3. **Execute um servidor local**:
-   ```bash
-   # Opção 1: Python
-   python -m http.server 8000
-
-   # Opção 2: Node.js (se tiver o live-server)
-   npx live-server
-   ```
-4. **Acesse no navegador**: `http://localhost:8000`
+```text
+http://localhost:8000/
+```
 
 ## Publicação no GitHub Pages
 
-1. Faça o push deste projeto para o repositório `fatec-sjc-dsm-portfolio/ra1461392411030`.
+1. Faça push da branch `main`.
 2. No GitHub, abra **Settings > Pages**.
-3. Em **Build and deployment**, selecione **Deploy from a branch**.
-4. Selecione a branch `main` e a pasta `/ (root)`, depois clique em **Save**.
-5. Aguarde a publicação e acesse:
-   `https://fatec-sjc-dsm-portfolio.github.io/ra1461392411030/`
+3. Em **Build and deployment**:
+   - Source: `Deploy from a branch`
+   - Branch: `main`
+   - Folder: `/docs`
+4. Salve e aguarde a publicação.
 
-Como o site é estático e possui `index.html` na raiz, não é necessário usar Vercel ou executar um processo de build.
+URL esperada:
 
-## ✨ Funcionalidades JavaScript
-
-- **Scroll Suave**: Navegação entre seções
-- **Animações de Entrada**: Elementos aparecem ao scroll
-- **Efeito Typing**: Título principal digitado dinamicamente
-- **Parallax**: Efeito sutil na imagem de perfil
-- **Header Dinâmico**: Muda aparência conforme scroll
-
-## 🎨 Paleta de Cores
-
-- **Principal**: `#667eea` (azul/roxo)
-- **Secundária**: `#764ba2` (roxo)
-- **Texto Principal**: `#2d3748` (cinza escuro)
-- **Texto Secundário**: `#4a5568` (cinza médio)
-- **Background**: `#f8fafc` (cinza claro)
-
-## 🔤 Tipografia
-
-- **Fonte Principal**: Inter (Google Fonts)
-- **Fallbacks**: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto
-- **Pesos**: 300, 400, 500, 600, 700
-
-## 📧 Contato
-
-**Eduardo Kuwahara Junior**
-- Email: eduardokuwaharajr57@gmail.com
-- LinkedIn: [Perfil LinkedIn](https://www.linkedin.com/in/eduardo-kuwahara-junior-3b2267303)
-- Telefone: (12) 98148-1559
-
----
-
-*Portfolio criado com ❤️ e muito CSS*
+```text
+https://fatec-sjc-dsm-portfolio.github.io/ra1461392411030/
+```
