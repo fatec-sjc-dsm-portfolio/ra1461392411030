@@ -357,11 +357,11 @@ header {
 .subsection-heading p { color: var(--muted); font-size: 0.85rem; }
 .projetos-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
 .projeto-card-modern { display: flex; flex-direction: column; padding: 30px; transition: transform 0.2s ease, box-shadow 0.2s ease; }
-.projeto-card-modern:nth-child(1) { order: 5; }
-.projeto-card-modern:nth-child(2) { order: 4; }
-.projeto-card-modern:nth-child(3) { order: 1; }
-.projeto-card-modern:nth-child(4) { order: 2; }
-.projeto-card-modern:nth-child(5) { order: 3; }
+.projeto-card-modern:nth-child(1) { order: 5 !important; }
+.projeto-card-modern:nth-child(2) { order: 4 !important; }
+.projeto-card-modern:nth-child(3) { order: 1 !important; }
+.projeto-card-modern:nth-child(4) { order: 2 !important; }
+.projeto-card-modern:nth-child(5) { order: 3 !important; }
 .projeto-card-modern:hover { transform: translateY(-4px); box-shadow: 0 20px 50px rgba(23, 32, 51, 0.12); }
 .projeto-card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
 .projeto-icon { display: grid; width: 40px; height: 40px; place-items: center; border-radius: 10px; background: var(--accent-soft); font-size: 1.3rem; }
