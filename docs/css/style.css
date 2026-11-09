@@ -494,6 +494,9 @@ header {
 .contact-section .eyebrow { color: #cbd4ff; }
 .contact-section h2 { color: white; }
 .contact-section p { color: #d7ddf5; }
+.contact-links { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 18px; }
+.contact-links a { color: white; font-size: 0.9rem; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.contact-links a:hover { color: #d7ddf5; }
 
 footer { padding: 28px 0; background: var(--ink); color: #9da8ba; text-align: center; font-size: 0.75rem; }
 
